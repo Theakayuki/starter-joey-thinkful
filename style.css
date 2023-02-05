@@ -1,0 +1,48 @@
+header {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+header h1 {
+    font-size: 3.25rem;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "montserrat", sans-serif;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    list-style-type: none;
+    padding: 16px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media all and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    #menu {
+        flex-direction: row;
+    }
+}
